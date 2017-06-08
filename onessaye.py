@@ -6,7 +6,6 @@ import sys
 import wave
 import math
 import binascii
-import pymedia
 
 player = pymedia.Player()
 player.start()
