@@ -6,8 +6,11 @@ import sys
 import wave
 import math
 import binascii
+import winsound
+import pygame
 
-player = pymedia.Player()
-player.start()
-player.startPlayback('DNCE.mp3')
-time.sleep(0.01)
+pygame.mixer.init()
+pygame.mixer.Sound('DCNE.wav').play()
+
+while pygame.mixer.get_busy():
+  pass
